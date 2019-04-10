@@ -1,0 +1,32 @@
+---
+title: "Combined Discussion & Assignment Week 11"
+author: "Rob Welk"
+date: "April 10, 2019"
+output: html_document
+---
+
+# Recommender Systems
+
+## Analyze an existing recommender system that you find interesting.  
+
+Uber Eats 
+
+## Perform a Scenario Design analysis.  
+
+Target Users  
+The main target users for Uber Eats are people who get take out food, particularly those who live in or around cities. In addition Uber Eats is used as a marketplace for restuarants, and by drivers looking to make extra money delivering food. All three groups can be considered users of Uber Eats.   
+
+Goals of users  
+Uber Eats' main goal is to get people to order food from their app, but their marketplace is three sided - eaters, restaurants, and delievery people.  For this reason their recommender system takes more into account than simply getting the largest number of people to place an order.  Each group has different goals that may not exactly align in all situations. For example, customers may benefit from being recommended only the most popular restaurants, which would likely increase the number of orders, but this would alienate newer and lesser known restaurants that could become buried in the system, and decrease supply of restaurants in the system. 
+
+Accomplishing goals  
+Goals for users are met by taking numerous metrics into account in a multi-armed bandit framework that aims to maximize user experience.  As stated above the goals of the three user groups are different, which affects system outputs. The system emphasizes balancing the needs of all their users.  
+       
+
+## Reverse engineer 
+The Uber Eats recommender systems attempts to reconcile the goals of each group in their marketplace, taking each group in account in the recommendation system. For eaters, a compromises are made between relevant and diverse food recommendations, that is, foods within a user's profile vs new types of food. To meet this end, user profiles are matched with restaurant characteristics. Uber Eats uses multi-objective optimization techniques to compromise between the varying needs of the three user groups, which provide the mathematical framework to meet user needs.  
+
+## Improvement    
+Uber Eats puts many considerations into it recommendations. It does not appear that they match profiles of users in nearby geographic regions with similar tastes in food as an input metric. This might be a way of providing better recommendations for users.   Also improvement is possible in the estimated delivery times.  Often these times are inaccurate.  It is one of the more challenging aspects of the platform since locations of active drivers must be paired with conditions within the restaurant.  A simple solution is to increase time intervals so that expected.  
+
+
